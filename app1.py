@@ -4,6 +4,7 @@ from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing import image
 import numpy as np
 
+
 def app():
     model_path = 'tomnod_2_100epochs_Adam.h5'
     model = load_model(model_path)
@@ -35,12 +36,12 @@ def app():
         prediction = predict(uploaded_file)
 
 
-    if prediction == 1.0:
-        st.success(
-            'Not Damaged')
-    else:
-        st.error(
-            'Damaged')
+        if prediction == 1.0:
+            st.success(
+                'Not Damaged')
+        else:
+            st.error(
+                'Damaged')
 
 
 
