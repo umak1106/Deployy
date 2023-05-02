@@ -1,0 +1,8 @@
+matplotlib
+numpy
+streamlit
+tensorflow
+Keras
+Pillow
+protobuf
+click<=8.0.4
