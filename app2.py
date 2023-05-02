@@ -48,9 +48,7 @@ def app():
             # add image mask to the probability array
 
         #### Show the picture
-        st.markdown("** The Predicted Probability is **: ")
-        plt.imshow(output_pred)
-        st.pyplot()
+
 
         # threshold = st.sidebar.slider("Threshold", 0, 1, 0.25)
         preds_t = (preds > 0.25).astype(np.uint8)
